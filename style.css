@@ -1,0 +1,44 @@
+body {
+    background-color: #999;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap-reverse ;
+    align-items: flex-end;
+    min-height: 900px;
+    padding-top: 20px;
+}
+
+.blogpost {
+    background-color: #ddd;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 300px;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.newest {
+    flex-grow: 1;
+}
+
+.lower {
+    align-self: flex-start;
+}
+
+.blogpost:hover {
+    box-shadow: 0 0 50px #555;
+}
